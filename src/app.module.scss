@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: #30363e;
+  position: relative;
+  box-shadow: inset 0 100px 150px -100px #000, inset 0 -100px 150px -100px #000;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 68px 100px 24px;
+  box-sizing: border-box;
+  align-items: center;
+  overflow-y: scroll;
+}

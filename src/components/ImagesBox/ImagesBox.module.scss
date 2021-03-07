@@ -1,0 +1,38 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.img {
+  flex: 50%;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  img {
+    max-width: 100%;
+    background-color: #ddd;
+  }
+  
+  h6 {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 8px;
+    background-color: rgba(93, 93, 93, 0.76);
+    border-radius: 100px;
+    color: #fff;
+    font-weight: normal;
+  }
+}

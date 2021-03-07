@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  padding: 16px 0;
+  box-sizing: border-box;
+  bottom: 0;
+  z-index: 0;
+  justify-content: flex-end;
+}
+
+button {
+  background-color: #2ecc71;
+  border: 0;
+  border-radius: 100px;
+  padding: 6px 12px;
+  color: #fff;
+  cursor: pointer;
+  outline: 0;
+  margin-right: 16px;
+
+  &.remove {
+    background-color: #ff4444;
+  }
+}
