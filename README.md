@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## What has been done?
+- Project development with Redax, Redux persist, React and Typescript.
+- Design images that can be moved with the mouse.
+- Save user data and use for future reference.
+- Add a new user to the list
+- Remove user from list
+
+
 ## Available Scripts
 
 In the project directory, you can run:
