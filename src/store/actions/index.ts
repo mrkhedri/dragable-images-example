@@ -1,6 +1,6 @@
 export interface UpdateUserSort {
   readonly type: string;
-  readonly payload: null | Array<any>;
+  readonly payload: null | string;
 }
 
 export interface AddUser {
@@ -29,7 +29,7 @@ export const addUser = (payload: AddUser["payload"], currentUsers: Array<any>) =
   if (payload === 5) newUser.push('Amin')
   if (payload === 6) newUser.push('Reyhaneh')
 
-  return { type: ADD_USER, payload: [...currentUsers, newUser] }
+  return { type: ADD_USER, payload: JSON.stringify([...currentUsers, newUser]) }
 }
 
 export const removeUser = (payload: AddUser["payload"], currentUsers: Array<any>) => {
@@ -37,5 +37,5 @@ export const removeUser = (payload: AddUser["payload"], currentUsers: Array<any>
     return Number(user[0]) !== payload
   })
 
-  return { type: ADD_USER, payload: newUsers }
+  return { type: ADD_USER, payload: JSON.stringify(newUsers) }
 }

@@ -5,7 +5,7 @@ import { addUser, removeUser } from '../../store/actions'
 import s from './ActionButtons.module.scss'
 
 const ActionButtons = () => {
-  const currentUsers = useAppSelector(state => state.chat.users)
+  const currentUsers = useAppSelector(state => JSON.parse(state.chat.users))
   const dispatch = useAppDispatch()
 
   const handleAddUser = (id: number) => dispatch(addUser(id, currentUsers))
